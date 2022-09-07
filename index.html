@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css">
+</head>
+</head>
+<body>
+ <!-- start nav bar -->
+ <nav class="nav-bar">
+    <a href="" class="logo">logo</a>
+    <ul>
+        <li><a class="text-logo" href="#">Home</a></li>
+        <li><a class="text-logo" href="#">About</a></li>
+        <li><a class="text-logo" href="#">contact</a></li>
+        <li><a  class="icon" href="#"><i id="icon-logo" class="fa-regular fa-bell"></i></a></li>
+
+    </ul>
+</nav>
+<!-- end nav bar -->
+<section>
+    <div class="container">
+        <div id="video-player" class="video_player">
+            <img  class="imge2" src="1.png" alt="">
+            <p  class="p-inVideo">hi Eng mostafa</p>
+            <video id="main.video" class="main-video" src="video/D E M O N S - [Demon Slayer 4k edit].mp4" ></video>
+           
+            <div class="progressAreaTime">0:00</div>
+            <div class="controls">
+                    <div class="progress-area">
+                        <div class="progress-bar">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="cotrols-list">
+                        <div class="controls-left">
+                            <span class="icon">
+                                <i class="material-icons fast-rewind">replay_10</i>
+                            </span>
+                            <span class="icon">
+                                <i class="material-icons play_pause">play_arrow</i>
+                            </span>
+                            <span class="icon">
+                                <i class="material-icons fast-forward ">forward_10</i>
+                            </span>
+                            <span class="icon">
+                                <i class="material-icons volume">volume_up</i>
+                                <input type="range" min="0" max="100" id="volume_range" class="volume_range">
+                            </span>
+                            <div class="timer">
+                                <span class="current">0:00</span> /<span class="duration">0:00</span>
+                            </div>
+                        </div>
+                        <div class="controls-right">
+                            <span class="icon">
+                                <i class="material-icons auto-play"></i>
+                            </span>
+                            <span class="icon">
+                                <i class="material-icons settingsBtn ">settings</i>
+                            </span>
+                            <span class="icon">
+                                <i class="material-icons  picture_in_picutre">picture_in_picture_alt</i>
+                            </span>
+                            <span class="icon">
+                                <i class="material-icons fullscreen ">fullscreen</i>
+                            </span>
+                        </div>
+
+                    </div>
+           
+                <div id="settings">
+                    <div class="playback">
+                        <span>playback speed</span>
+                        <ul>
+                            <li data-speed="0.25" >0.25</li>
+                            <li data-speed="0.5">0.5</li>
+                            <li data-speed="0.75">0.75</li>
+                            <li data-speed="1" class="active">Normal</li>
+                            <li data-speed="1.25">1.25</li>
+                            <li data-speed="1.5">1.5</li>
+                            <li data-speed="1.75">1.75</li>
+                            <li data-speed="2">2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+</section>
+
+
+
+<div class="like-icon">
+    <button class="like share">
+        <span id="icon-forlLike"><i class="fa-regular fa-thumbs-up"></i></span>
+        <span id="count">0</span> Like
+    </button>
+
+    <button class="like share">
+        <span id="icon-forSHARE"> <i class="fa-solid fa-share"></i></span>
+        Share
+    </button>
+</div>
+
+<div class="contaner1">
+    <div class="button upbtn">
+        <input type="file" id="uplload">
+        <button type="submite" id="Upload" >UpLoad Your Video</button>
+    </div>
+    
+</div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
